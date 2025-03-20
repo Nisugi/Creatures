@@ -76,6 +76,7 @@
 :special_abilities  => []
 :spells_cast        => []
 :spells_worn        => []
+:possible_boons     => []
 
 :arrival            => /regex/  # spawn message
 :enter              => /regex/  # are enter and leave even different for creatures?
