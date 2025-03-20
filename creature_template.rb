@@ -1,0 +1,84 @@
+:noun               => nil
+:name               => nil
+:level              => nil      # base level
+:size               => nil      # appraise/assess
+:height             => nil      # standing, could do [ standing: 6, prone: 1 ]
+:family             => nil      # triton, suine, ooze, bird, worm
+:body               => nil      # biped, quadruped, globoid, avian, worm
+:type               => []       # living/undead, boss, corporeal/non-corporeal, construct, beast, demon, grimswarm?
+:areas              => []       # where is it found?
+:right_hand         => nil      # what does it typically spawn with?
+:left_hand          => nil      
+:armor              => nil      # armor type it spawns with
+
+:skin               => []      # skin name
+:require_blunt      => false   
+:coins              => false    
+:gems               => false
+:magic_items        => false
+:boxes              => false
+
+:legged             => false    # has legs?   .. hamstring
+:bones              => false    # has bones?  .. boneshatter
+:blood              => false    # has blood?  .. poison
+:flying             => false    # can fly?
+:shield             => false    # has shield?
+:deflects           => false    # deflects ranged/bolts .. triton protectors
+:hides              => false    # uses stealth .. includes fade?
+:disarms            => false    # can disarm you?
+:casts              => false    # uses offensive spells
+:melee              => false    # uses physical attacks
+:ucs                => false    # uses ucs attacks
+
+:hp                 => nil
+:melee_as           => nil      # (XXX..XXX) usually is a range, probably level dependent
+:bolt_as            => nil
+:melee_ds           => nil
+:ranged_ds          => nil
+:bolt_ds            => nil
+:udf                => nil
+:uac                => nil
+:cs                 => [ 
+  :bard             => nil     # (XXX..XXX) usually is a range, probably level dependent
+  :cleric           => nil
+  :empath           => nil
+  :paladin          => nil
+  :ranger           => nil
+  :sorcerer         => nil
+  :wizard           => nil
+  :minor_elemental  => nil
+  :major_elemental  => nil
+  :minor_spiritual  => nil
+  :major_spiritual  => nil
+  :minor_mental     => nil
+  :major_mental     => nil
+]
+:td                 => [
+  :bard             => nil 
+  :cleric           => nil
+  :empath           => nil
+  :paladin          => nil
+  :ranger           => nil
+  :sorcerer         => nil
+  :wizard           => nil
+  :minor_elemental  => nil
+  :major_elemental  => nil
+  :minor_spiritual  => nil
+  :major_spiritual  => nil
+  :minor_mental     => nil
+  :major_mental     => nil
+]
+
+:resists            => []
+:suscepts           => []
+:attacks            => [] 
+:cmans              => []  # do we split out completely, or do we just do :physical_attacks, :magic_attacks, :smr_attacks ?
+:special_abilities  => []
+:spells_cast        => []
+:spells_worn        => []
+
+:arrival            => /regex/  # spawn message
+:enter              => /regex/  # are enter and leave even different for creatures?
+:leave              => /regex/
+:description        => /regex/
+:death_regex        => /regex/
